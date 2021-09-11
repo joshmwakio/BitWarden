@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="994.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bitw.controllers.MainController">
+   <children>
+      <BorderPane prefHeight="571.0" prefWidth="994.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox prefHeight="571.0" prefWidth="224.0" style="-fx-background-color: #282828;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="18.0" prefWidth="207.0" />
+                  <Button fx:id="btnAllItems" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="19.0" prefWidth="217.0" stylesheets="@../css/styling.css" text="All Items" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/all.png" />
+                           </image></ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnFavorites" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="19.0" prefWidth="217.0" stylesheets="@../css/styling.css" text="Favorites" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/favorite.png" />
+                           </image></ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnTrash" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="19.0" prefWidth="217.0" stylesheets="@../css/styling.css" text="Trash" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/trash.png" />
+                           </image></ImageView>
+                     </graphic>
+                  </Button>
+                  <Label prefHeight="44.0" prefWidth="207.0" text="Types" textFill="#aeaeae" />
+                  <Button fx:id="btnLogin" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="19.0" prefWidth="217.0" stylesheets="@../css/styling.css" text="Login" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/login'.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnCard" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="19.0" prefWidth="217.0" stylesheets="@../css/styling.css" text="Card" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/card.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnIdentity" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="19.0" prefWidth="217.0" stylesheets="@../css/styling.css" text="Identity" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/identity.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnNote" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="19.0" prefWidth="217.0" stylesheets="@../css/styling.css" text="Secure Note" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/note.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label prefHeight="44.0" prefWidth="207.0" text="Folders" textFill="#aeaeae" />
+                  <Button fx:id="btnWork" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="19.0" prefWidth="217.0" stylesheets="@../css/styling.css" text="Work" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/folder.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnSocial" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="19.0" prefWidth="217.0" stylesheets="@../css/styling.css" text="Social" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/folder.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnPersonal" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="19.0" prefWidth="217.0" stylesheets="@../css/styling.css" text="Personal" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/folder.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="8.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+         </left>
+         <right>
+            <Pane prefHeight="571.0" prefWidth="463.0" style="-fx-background-color: #1E1E1E; -fx-border-color: #1A1A1A; -fx-border-insets: 1 0 0 0;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="60.0" layoutY="63.0">
+                     <children>
+                        <ImageView fx:id="ivLogo" fitHeight="40.0" fitWidth="40.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/adobecc.png" />
+                           </image>
+                        </ImageView>
+                        <VBox layoutX="55.0">
+                           <children>
+                              <Label fx:id="lblCompanyName" prefHeight="20.0" prefWidth="121.0" text="Adobe" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="13.0" prefWidth="121.0" text="Login" textFill="#aeaeae" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+                  <TextField fx:id="tfUsername" layoutX="67.0" layoutY="157.0" prefHeight="36.0" prefWidth="327.0" promptText="Username" style="-fx-background-color: #404040; -fx-text-fill: #FFFFFF;" />
+                  <PasswordField fx:id="tfPassword" layoutX="67.0" layoutY="218.0" prefHeight="33.0" prefWidth="325.0" promptText="Password" style="-fx-background-color: #404040; -fx-text-fill: #FFFFFF;" />
+                  <VBox layoutX="67.0" layoutY="277.0" prefHeight="34.0" prefWidth="321.0">
+                     <children>
+                        <Label prefHeight="13.0" prefWidth="121.0" text="Website" textFill="#aeaeae" />
+                        <Label fx:id="lblWebsite" prefHeight="13.0" prefWidth="121.0" text="adobe.com" textFill="WHITE" />
+                     </children>
+                  </VBox>
+                  <Line endX="222.0" layoutX="168.0" layoutY="130.0" startX="-100.0" stroke="#6f6d6d" />
+                  <Line endX="222.0" layoutX="168.0" layoutY="339.0" startX="-100.0" stroke="#6f6d6d" />
+                  <VBox layoutX="67.0" layoutY="364.0" prefHeight="133.0" prefWidth="324.0">
+                     <children>
+                        <Label prefHeight="13.0" prefWidth="121.0" text="Notes" textFill="#aeaeae" />
+                        <Label fx:id="lblNotes" prefHeight="13.0" prefWidth="121.0" text="Some notes go here" textFill="WHITE" />
+                     </children>
+                  </VBox>
+                  <Button fx:id="btnEdit" alignment="BASELINE_LEFT" layoutX="371.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="20.0" prefWidth="30.0" style="-fx-background-color: #282828; -fx-background-radius: 5;" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/edit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnDelete" alignment="BASELINE_LEFT" layoutX="412.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="20.0" prefWidth="30.0" style="-fx-background-color: #282828; -fx-background-radius: 5;" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/delete.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </Pane>
+         </right>
+         <center>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #1E1E1E; -fx-border-color: #111111; -fx-border-insets: 1 0 0 0;" BorderPane.alignment="CENTER">
+               <top>
+                  <HBox alignment="CENTER_LEFT" prefHeight="41.0" prefWidth="249.0" spacing="5.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <TextField fx:id="tfSearch" prefHeight="25.0" prefWidth="254.0" promptText="Search Vault" style="-fx-background-color: #404040; -fx-text-fill: #FFFFFF;" />
+                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="20.0" prefWidth="30.0" stylesheets="@../css/styling.css" textFill="WHITE">
+                           <graphic>
+                              <ImageView fx:id="btnAdd" fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/addw.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                  </HBox>
+               </top>
+               <center>
+                  <VBox fx:id="vItems" prefHeight="506.0" prefWidth="305.0" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
